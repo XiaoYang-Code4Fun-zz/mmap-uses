@@ -1,4 +1,4 @@
-package com.example.mmap;
+package com.example.mmap.writer;
 
 import sun.misc.Unsafe;
 
