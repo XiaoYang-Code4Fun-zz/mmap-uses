@@ -1,9 +1,9 @@
-package com.example.mmap;
+package com.example.mmap.writer;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class PerfTest {
+public class FileAppenderPerfTest {
     private static int bufferSize = 10000;
     private static long iteration = 100000;
     private static NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.US);
@@ -35,7 +35,5 @@ public class PerfTest {
         end = System.currentTimeMillis();
         System.out.println("Vanilla File Appender Test");
         System.out.println("Run the throughput: " + GetOpsPerSec(start, end) + " ops/sec");
-
-
     }
 }
